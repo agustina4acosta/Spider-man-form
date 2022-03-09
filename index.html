@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Form</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time to answer us
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Favorite Spider man film/p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="spider1">Spider man 1</option>
+              <option value="spider2">Spider man 2</option>
+              <option value="spider3">Spider man 3</option>
+              <option value="tasm1">The amazing Spider man 1</option>
+              <option value="tasm2">The amazing Spider man 2</option>
+              <option value="hoco">Spider man: HomeComing</option>
+              <option value="ffh">Spider man: Far from home</option>
+              <option value="nwh">Spider man: No way home</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Would you recommend this movie?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Not sure</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What is your favorite Spider man?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="tobey">Tobey</option>
+              <option value="andrew">Andrew Garfield</option>
+              <option value="tom">Tom holland</option>
+              
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What would you like to see improved?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="plot"
+                type="checkbox"
+                class="input-checkbox"
+              />Better plot</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="villans"
+                type="checkbox"
+                class="input-checkbox"
+              />Other villans</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="acting"
+                type="checkbox"
+                class="input-checkbox"
+              />Better acting</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="comic"
+                type="checkbox"
+                class="input-checkbox"
+              />Comic acurracy</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="more"
+                type="checkbox"
+                class="input-checkbox"
+              />More movies</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="andrew"
+                type="checkbox"
+                class="input-checkbox"
+              />Third Andrew movie</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="mcu"
+                type="checkbox"
+                class="input-checkbox"
+              />Other heroes coming to the mcu</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="sony"
+                type="checkbox"
+                class="input-checkbox"
+              />Andrew garfield in more sony projects</label
+            >
+            
+            
+            <label
+              ><input
+                name="trilogies"
+                value="forum"
+                type="checkbox"
+                class="input-checkbox"
+              />More trilogies</label
+            >
+            
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
